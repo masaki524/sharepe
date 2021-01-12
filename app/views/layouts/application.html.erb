@@ -5,11 +5,44 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+
+
+  <body style="padding-top:6rem;">
+    <div class="wrapper">
+
+    <header class="navbar navbar-expand-lg navbar-white fixed-top">
+      <div class="container">
+        <a href="/" class="h3 mr-md-auto font-weight-normal text-dark">
+          <strong>Sharepe</strong>
+        </a>
+
+        <nav class="my-2 my-md-0 mr-md-3">
+          <a class="p-2 text-dark" href="#">マイページ</a>
+          <a class="p-2 text-dark" href="/share/index">レシピ</a>
+          <a class="p-2 text-dark" href="#">レシピ投稿</a>
+          <a class="p-2 text-dark" href="#">新規登録</a>
+        </nav>
+        <a class="btn btn-outline-success" href="#">ログイン</a>
+
+        
+      </div>
+    </header>
+
     <%= yield %>
+
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+      </div>
+    </footer>
+
+  </div>
   </body>
 </html>
