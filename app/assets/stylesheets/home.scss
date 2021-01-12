@@ -1,0 +1,66 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.top-image{
+  width: 100%;
+  margin: 0 auto;
+  height: 500px;
+}
+
+.top{
+  height: 400px;
+  background-image: image-url("topimage.jpeg");
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.top-image-text{
+  font-size: 100px;
+  color: #FCE77D;
+  opacity: 0.90;
+  margin: 50px;
+  font-family: 'Bangers', cursive;
+}
+
+.contents{
+  display: flex;
+  justify-content: space-around;
+  margin: 100px 30px;
+}
+
+.content{
+  width: 333px;
+  display: flex;
+  height: 200px;
+}
+
+.content-text{
+  text-align: center;
+  margin: auto auto;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: impact;
+  text-shadow: 1px 1px black;
+
+  span{
+    color:#FCE77D;
+  }
+}
+
+.roulette{
+  background-image: image-url("roulette.jpg");
+  background-size: cover;
+}
+
+.about{
+  background-image: image-url("sharepe.jpeg");
+  background-size: cover;
+}
+
+.recipe{
+  background-image: image-url("about.jpeg");
+  background-size: cover;
+}
